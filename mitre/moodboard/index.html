@@ -1,0 +1,376 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex,nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Moodboard Bartolomé Mitre 1648</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+/* Mismo mundo visual que Ritual Control: fondo carbón cálido, tarjetas con filete de color por categoría, píldoras con punto y líneas onduladas naranjas. */
+:root {
+  --bg: #191816; --side: #1F1E1B; --card: #22211E; --card2: #2A2925; --line: rgba(218, 217, 222, .11); --line2: rgba(218, 217, 222, .2);
+  --text: #ECEBE8; --dim: #A9A7A2; --mute: #77756F; --hormigon: #DAD9DE;
+  --orange: #F07A3A; --green: #6CC07E; --purple: #B49AE0; --blue: #6FA3E0; --amber: #DCB056; --red: #E8735C;
+  --f: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  color-scheme: dark;
+}
+[hidden] { display: none !important; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--text); }
+body { font-family: var(--f); font-size: 14px; line-height: 1.45; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+.waves { position: fixed; inset: auto 0 0 0; height: 60vh; pointer-events: none; opacity: .22; z-index: 0; }
+.wrap { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding-block: 20px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.brandline { margin: 0; font-size: 11px; letter-spacing: .14em; color: var(--dim); }
+.brandline b { color: var(--text); font-weight: 700; }
+.crumb { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; font-weight: 600; border: 1px solid var(--line2); border-radius: 4px; padding: 5px 10px; color: var(--text); text-decoration: none; }
+.head { display: flex; align-items: center; gap: 14px; margin: 18px 0 4px; }
+.head .crumb { margin-left: auto; }
+.head .bar { width: 8px; align-self: stretch; min-height: 34px; border-radius: 2px; background: var(--orange); }
+h1 { margin: 0; font-size: clamp(22px, 3vw, 30px); font-weight: 700; text-wrap: balance; }
+.sub { margin: 0 0 18px 22px; color: var(--dim); font-size: 12px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.tab { display: inline-flex; align-items: center; gap: 8px; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line2); background: var(--card); cursor: pointer; font-weight: 600; font-size: 13px; }
+.tab .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--c, var(--dim)); }
+.tab[aria-selected="true"] { background: var(--c); border-color: var(--c); color: #191816; }
+.tab[aria-selected="true"] .dot { background: #191816; }
+.badge { font-size: 10px; font-weight: 700; background: var(--card2); border-radius: 999px; padding: 1px 6px; color: var(--text); font-variant-numeric: tabular-nums; }
+.tab[aria-selected="true"] .badge { background: rgba(0,0,0,.18); color: #191816; }
+.badge.warn { background: var(--red); color: #fff; }
+
+.sec { display: flex; align-items: center; gap: 10px; margin: 26px 0 12px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--c, var(--purple)); }
+.sec::before { content: ''; width: 9px; height: 9px; background: currentColor; border-radius: 1px; }
+.sec::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+.sec .n { color: var(--mute); letter-spacing: .06em; }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-top: 2px solid var(--green); border-radius: 4px; overflow: hidden; }
+.stat { background: var(--card); padding: 14px 16px; min-width: 0; }
+.stat .k { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+.stat .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; margin-top: 4px; }
+.stat .v small { font-size: 12px; font-weight: 500; color: var(--dim); }
+.prog { height: 4px; background: var(--card2); border-radius: 2px; margin-top: 8px; overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--green); width: 0; transition: width .4s; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 18px; }
+.chip { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line2); background: transparent; cursor: pointer; font-size: 12px; font-weight: 500; }
+.chip[aria-pressed="true"] { background: var(--hormigon); color: #191816; border-color: var(--hormigon); font-weight: 600; }
+.search { margin-left: auto; min-width: 0; flex: 0 1 260px; background: var(--card); border: 1px solid var(--line2); border-radius: 6px; padding: 7px 11px; }
+
+/* moodboard */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.tile { background: var(--card); border: 1px solid var(--line); border-top: 2px solid var(--c, var(--orange)); border-radius: 4px; overflow: hidden; cursor: pointer; text-align: left; padding: 0; display: flex; flex-direction: column; transition: border-color .2s, transform .2s; }
+.tile:hover { border-color: var(--line2); transform: translateY(-2px); }
+.tile .ph { aspect-ratio: 4 / 3; width: 100%; max-width: 100%; background: var(--card2); position: relative; }
+.tile .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tile .ph .noimg { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 6px; color: var(--mute); background: repeating-linear-gradient(135deg, transparent 0 10px, rgba(218,217,222,.035) 10px 11px); }
+.tile .ph .noimg b { font-size: 22px; color: var(--dim); letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.tile .ph .noimg small { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.sw { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(255,255,255,.25); vertical-align: -2px; }
+.tile .bd { padding: 11px 12px 12px; display: grid; gap: 4px; }
+.tile .nm { font-weight: 600; font-size: 13px; }
+.tile .meta { font-size: 11px; color: var(--dim); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.code { font-variant-numeric: tabular-nums; letter-spacing: .04em; color: var(--dim); font-size: 11px; }
+
+/* especificaciones */
+.list { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--card); }
+.row { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, .8fr) minmax(0, 1.4fr) minmax(0, 1fr) 28px; gap: 14px; align-items: center; padding: 11px 14px; border-top: 1px solid var(--line); cursor: pointer; background: none; border-left: 0; border-right: 0; border-bottom: 0; width: 100%; text-align: left; }
+.row:first-child { border-top: 0; }
+.row:hover { background: var(--card2); }
+.row .t { min-width: 0; display: flex; gap: 10px; align-items: center; }
+.row .t img, .row .t .sq { width: 38px; height: 38px; border-radius: 3px; object-fit: cover; flex: none; background: var(--card2); }
+.row .t b { display: block; font-weight: 600; font-size: 13px; }
+.qty { font-variant-numeric: tabular-nums; font-weight: 600; }
+.qty.none { color: var(--amber); font-weight: 500; font-size: 12px; }
+.amb { font-size: 12px; color: var(--dim); min-width: 0; overflow-wrap: anywhere; }
+.st { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid; justify-self: start; white-space: nowrap; }
+.st.ok { color: var(--green); } .st.prop { color: var(--blue); } .st.todo { color: var(--mute); border-style: dashed; } .st.alert { color: var(--amber); }
+.chev { color: var(--mute); }
+
+/* panel de ítem */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 20; }
+#panel { position: fixed; z-index: 21; top: 0; right: 0; bottom: 0; width: min(560px, 100%); background: var(--side); border-left: 1px solid var(--line2); overflow: auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 18px) max(18px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) 20px; }
+#panel h2.sec { font-size: 11px; margin: 22px 0 6px; }
+#panel h2#pTitle { margin: 6px 40px 4px 0; font-size: 20px; font-weight: 700; text-wrap: balance; }
+.close { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px)); width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line2); background: var(--card); cursor: pointer; font-size: 18px; }
+.eyebrow { margin: 0; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--c, var(--orange)); }
+.hero { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 14px; margin: 14px 0 6px; }
+.hero.solo { grid-template-columns: 1fr; }
+.hero img { width: 160px; height: 160px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); }
+.facts { display: grid; gap: 6px; font-size: 12px; align-content: start; min-width: 0; }
+.facts div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.facts span:first-child { color: var(--dim); }
+.facts span:last-child { text-align: right; min-width: 0; overflow-wrap: anywhere; }
+.ralrow { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.ral { display: inline-flex; gap: 6px; align-items: center; font-size: 11px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px 3px 4px; }
+.alertbox { margin: 12px 0; padding: 10px 12px; border-left: 3px solid var(--amber); background: rgba(220,176,86,.08); font-size: 12px; }
+.field { border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; margin-top: 8px; background: var(--card); }
+.field[data-s="ok"] { border-color: rgba(108,192,126,.5); }
+.field[data-s="no"] { border-color: rgba(232,115,92,.55); }
+.field[data-s="fix"] { border-color: rgba(111,163,224,.55); }
+.fk { display: flex; justify-content: space-between; gap: 8px; align-items: center; font-size: 11px; color: var(--dim); letter-spacing: .04em; }
+.fv { margin-top: 4px; font-size: 13px; overflow-wrap: anywhere; }
+.fv.empty { color: var(--mute); font-style: italic; }
+.fsrc { margin-top: 3px; font-size: 10px; color: var(--mute); }
+.facts-acts { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.b { border: 1px solid var(--line2); background: transparent; border-radius: 999px; padding: 5px 11px; font-size: 12px; cursor: pointer; }
+.b.ok[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: #191816; font-weight: 600; }
+.b.fix[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #191816; font-weight: 600; }
+.b.no[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: #fff; font-weight: 600; }
+.b.main { background: var(--orange); border-color: var(--orange); color: #191816; font-weight: 700; }
+.edit { display: grid; gap: 6px; margin-top: 8px; }
+.edit input, .edit textarea { background: var(--bg); border: 1px solid var(--line2); border-radius: 6px; padding: 7px 9px; width: 100%; }
+.saveline { font-size: 11px; color: var(--dim); margin-top: 14px; min-height: 16px; }
+.ask { display: flex; gap: 8px; align-items: center; margin-top: 16px; padding: 10px 12px; border: 1px dashed var(--line2); border-radius: 6px; font-size: 12px; }
+.ask input { accent-color: var(--orange); width: 16px; height: 16px; }
+.alerts { display: grid; gap: 10px; }
+.al { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 4px; padding: 12px 14px; display: grid; gap: 4px; cursor: pointer; text-align: left; }
+.al b { font-size: 13px; }
+.al span { font-size: 12px; color: var(--dim); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 11px; color: var(--dim); margin-top: 10px; }
+.legend .st { font-size: 9px; }
+.ro .facts-acts, .ro .edit, .ro .ask { display: none; }
+@media (max-width: 760px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .row .amb, .row .chev { display: none; }
+  .row .st { grid-column: 1 / -1; }
+  .search { flex-basis: 100%; margin-left: 0; }
+  .hero { grid-template-columns: 1fr; }
+  .hero.solo { grid-template-columns: 1fr; }
+.hero img { width: 100%; height: auto; aspect-ratio: 1; max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .tile, .prog i { transition: none; } }
+</style>
+
+<svg class="waves" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#F07A3A" stroke-width=".7" id="wv"></g></svg>
+<div class="wrap">
+  <p class="brandline"><b>RITUAL</b> ESTUDIO · CONTROL DE OBRAS · Proyecto</p>
+  <div class="head"><span class="bar"></span><h1 id="obra"></h1><a class="crumb" id="toTour" href="../360/" hidden>Recorrido 360° →</a></div>
+  <p class="sub" id="sub"></p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t-mood" aria-selected="true" style="--c: var(--orange)"><span class="dot"></span>Moodboard</button>
+    <button class="tab" role="tab" id="t-spec" aria-selected="false" style="--c: var(--purple)"><span class="dot"></span>Especificaciones <span class="badge" id="b-spec"></span></button>
+    <button class="tab" role="tab" id="t-alert" aria-selected="false" style="--c: var(--amber)"><span class="dot"></span>Datos que faltan <span class="badge warn" id="b-alert"></span></button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="k">Ítems de la obra</div><div class="v" id="s-items"></div></div>
+    <div class="stat"><div class="k">Con cantidad del modelo</div><div class="v" id="s-qty"></div></div>
+    <div class="stat"><div class="k">Campos verificados</div><div class="v" id="s-ver"></div><div class="prog"><i id="s-prog"></i></div></div>
+    <div class="stat"><div class="k">Pedidos a Claude</div><div class="v" id="s-ask"></div></div>
+  </div>
+
+  <div class="filters" id="filters"></div>
+  <main id="view"></main>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside id="panel" hidden aria-labelledby="pTitle"><button class="close" id="pClose" type="button" aria-label="Cerrar">×</button><div id="pBody"></div></aside>
+
+<script id="cat-data" type="application/json">{"obra": "Bartolomé Mitre 1648", "fecha": "09/10/2026", "items": [{"id": "05.90-EXT", "codigo": "05.90-EXT", "item": "Superficie con vegetacion / cesped", "cantidad": 1.03, "unidad": "m²", "medidas": "", "ambientes": ["Patio Interno"], "elementos": ["Suelo · Vegetación"], "materiales": ["Hierba"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Exterior y patio", "muestra": {"img": "muestras/05_90-EXT.jpg", "hex": "#7F9A39", "de": "Render D5 · Dormitorio · TV · Césped del patio", "ral": [{"ral": "RAL 7034", "nombre": "Yellow grey", "hex": "#939176", "dE": 15.4}, {"ral": "RAL 1020", "nombre": "Olive yellow", "hex": "#A08F65", "dE": 15.7}, {"ral": "RAL 7002", "nombre": "Olive grey", "hex": "#817F68", "dE": 17.7}]}}, {"id": "06.91-EXT", "codigo": "06.91-EXT", "item": "Viga / tirante de madera", "cantidad": 22.81, "unidad": "ml", "medidas": "", "ambientes": [], "elementos": ["Madera-Viga rectangular · Viga de Madera"], "materiales": ["Hormigón, Moldeado in situ, gris"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Maderas y estructura vista"}, {"id": "07.91-EXT", "codigo": "07.91-EXT", "item": "Cubierta de chapa SIN estructura (chapa + aislacion + membrana)", "cantidad": 12.46, "unidad": "m²", "medidas": "", "ambientes": [], "elementos": ["Cubierta básica · Cubierta de Chapa"], "materiales": ["Aislamiento térmico", "Membrana", "Chapa C25 0,5 mm"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "08.05", "codigo": "08.05", "item": "LH8 Mampostería de ladrillo hueco 8x18x33", "cantidad": 29.94, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio", "Patio Interno"], "elementos": ["Muro básico · Ladrillo Hueco 8cm x 18cm x 33cm"], "materiales": ["Ladrillo 8cm x 18cm x 33cm"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "08.07", "codigo": "08.07", "item": "LH18 Mampostería de ladrillo hueco 18x18x33", "cantidad": 5.02, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio", "Patio Interno", "Sala de Estar"], "elementos": ["Muro básico · Ladrillo Hueco 18cm x 18cm x 33cm"], "materiales": ["Ladrillo 18cm x 18cm x 33cm"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "08.22", "codigo": "08.22", "item": "PYE Enchape de muro con placa de roca de yeso común, con estructura 35mm", "cantidad": 2.17, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Muro básico · Placa de durlock - Tapas"], "materiales": ["Revoque Interior", "Acero galvanizado"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "10.01", "codigo": "10.01", "item": "Contrapiso alivianado con o sin pendiente (h min 5cm)", "cantidad": 10.82, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Suelo · Contrapiso Escalera", "Suelo · Contrapiso"], "materiales": ["Contrapiso"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "10.02", "codigo": "10.02", "item": "Contrapiso alivianado con o sin pendiente  (h prom 10cm)", "cantidad": 1.14, "unidad": "m²", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Suelo · Contrapiso 10cm (cocina)"], "materiales": ["Contrapiso"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "10.07", "codigo": "10.07", "item": "Carpeta de nivelación (e = 3cm)", "cantidad": 11.35, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Suelo · Carpeta"], "materiales": ["Carpeta"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "11.09", "codigo": "11.09", "item": "Revoque fino al fieltro (1/8:1:3) (hasta 4m de altura)", "cantidad": 110.35, "unidad": "m²", "medidas": "", "ambientes": ["Dormitorio", "Baño", "Patio Interno", "Sala de Estar", "Cocina/Lavadero", "Hall Acceso"], "elementos": ["Muro básico · Revoque Interior", "Muro básico · Revoque Exterior"], "materiales": ["RITUAL Revoque fino", "RITUAL Revoque grueso", "RITUAL Azotado hidrofugo"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Pinturas y revoques", "muestra": {"img": "muestras/11_09.jpg", "hex": "#E9D1BC", "de": "Render D5 · Sala y comedor · Muro de la sala", "ral": [{"ral": "RAL 1015", "nombre": "Light ivory", "hex": "#E6D2B5", "dE": 4.2}, {"ral": "RAL 1013", "nombre": "Oyster white", "hex": "#E3D9C6", "dE": 6.2}, {"ral": "RAL 1014", "nombre": "Ivory", "hex": "#DDC49A", "dE": 8.0}]}}, {"id": "12.94-EXT", "codigo": "12.94-EXT", "item": "Puerta corrediza de PVC", "cantidad": 1.0, "unidad": "u", "medidas": "1 u. 1,52 x 2,11", "ambientes": ["Sala de Estar"], "elementos": ["Doors_GEALAN_Smoovio_Sliding-Door_Plan_A · Puerta corredera de 2.00m de alto x 1.60m de ancho"], "materiales": ["Glas GEALAN", "Rubber_Gealan_Black", "Color_Gealan_RAL-9005-Deep Black_Exterior", "Frame_Gealan_PVC-H"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Aberturas"}, {"id": "12.95-EXT", "codigo": "12.95-EXT", "item": "Puerta automatica corrediza", "cantidad": 1.0, "unidad": "u", "medidas": "1 u. 3,10 x 2,00", "ambientes": ["Dormitorio"], "elementos": ["2021_EN_Door_Manusa_A30_Automatic-Biparting-With-Fixed_58825 · Puerta corredera 4 hojas de 2.00m de alto x 3.10m de ancho"], "materiales": ["Aluminum", "Glass.", "Aluminum_Black"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Aberturas", "muestra": {"img": "muestras/12_95-EXT.jpg", "hex": "#AEA27F", "de": "Render D5 · Dormitorio · Puerta corrediza vidriada", "ral": [{"ral": "RAL 1020", "nombre": "Olive yellow", "hex": "#A08F65", "dE": 6.4}, {"ral": "RAL 7034", "nombre": "Yellow grey", "hex": "#939176", "dE": 7.6}, {"ral": "RAL 1000", "nombre": "Green beige", "hex": "#CDBA88", "dE": 8.0}]}}, {"id": "14.05", "codigo": "14.05", "item": "Revestimiento cerámico", "cantidad": 2.81, "unidad": "m²", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Muro básico · Revestimiento Cocina"], "materiales": ["Revestimiento Cocina"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Pisos y revestimientos"}, {"id": "14.91-EXT", "codigo": "14.91-EXT", "item": "Piso de porcelanato (provision y colocacion con adhesivo cementicio)", "cantidad": 27.55, "unidad": "m²", "medidas": "", "ambientes": ["Sala de Estar", "Baño"], "elementos": ["Suelo · Pido Porcelanato", "Suelo · Suelo Ducha - Porcelanato + Carpeta"], "materiales": ["Porcelanato", "Carpeta"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Pisos y revestimientos", "muestra": {"img": "muestras/14_91-EXT.jpg", "hex": "#FDFAF5", "de": "Render D5 · Hall de acceso · Piso del hall", "ral": [{"ral": "RAL 9003", "nombre": "Signal white", "hex": "#F4F8F4", "dE": 3.4}, {"ral": "RAL 9016", "nombre": "Traffic white", "hex": "#F7FBF5", "dE": 3.5}, {"ral": "RAL 9010", "nombre": "Pure white", "hex": "#F7F9EF", "dE": 3.8}]}}, {"id": "14.92-EXT", "codigo": "14.92-EXT", "item": "Revestimiento de porcelanato en pared (provision y colocacion con adhesivo cementicio)", "cantidad": 7.48, "unidad": "m²", "medidas": "", "ambientes": ["Baño"], "elementos": ["Muro básico · Revestimiento Ducha"], "materiales": ["Porcelanato"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Pisos y revestimientos"}, {"id": "16.01", "codigo": "16.01", "item": "CSYC Cielorraso suspendido placa de roca de yeso común con estructura de 35mm", "cantidad": 29.05, "unidad": "m²", "medidas": "", "ambientes": [], "elementos": ["Techo compuesto · Techo de Durlock Suspendido.", "Techo compuesto · Falso techo continuo de placa de yeso laminado"], "materiales": ["Panel yeso techo", "Placa de yeso laminado", "Metal - Perfiles de acero galvanizado"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Cielorrasos", "muestra": {"img": "muestras/16_01.jpg", "hex": "#9D8F81", "de": "Render D5 · Hall de acceso · Cielorraso del hall", "ral": [{"ral": "RAL 1019", "nombre": "Grey beige", "hex": "#A48F7A", "dE": 3.4}, {"ral": "RAL 1035", "nombre": "Pearl beige", "hex": "#908370", "dE": 5.1}, {"ral": "RAL 7048", "nombre": "Pearl mouse grey", "hex": "#888175", "dE": 6.4}]}}, {"id": "18.01", "codigo": "18.01", "item": "Inodoro largo con asiento y mochila 6 lts - doble descarga - con asiento y tapa de polipropileno", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Baño"], "elementos": ["Linea Marina - Inodoro Largo · Inodoro Largo - Linea Marina"], "materiales": [], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Sanitarios y grifería"}, {"id": "18.23", "codigo": "18.23", "item": "Bacha A°inoxidable para pileta de cocina (52x32x18)", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Kitchen_Sinks_Roca_PORTO-550-Single-bowl-stainless-steel-sink · PORTO 550 Single bowl stainless steel sink"], "materiales": ["Roca - PORTO - Polished stainless steel"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Sanitarios y grifería"}, {"id": "18.93-EXT", "codigo": "18.93-EXT", "item": "Receptaculo de ducha ejecutado in situ: carpeta con pendiente, impermeabilizacion y desague (se codifica en el desague, el porcelanato del piso va con 14.91-EXT y el de las paredes con 14.92-EXT)", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Baño"], "elementos": ["Plumbing_Drainage_AXOR_42525XXX-AXOR-Drain-Finish-set-shower-dr · 140 Brushed Bronze"], "materiales": ["AXOR - Plastic - Grey", "AXOR - Metal - 140 Brushed Bronze", "AXOR - Plastic - Dark Grey"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Sanitarios y grifería"}, {"id": "18.94-EXT", "codigo": "18.94-EXT", "item": "Lavamanos de apoyo sin rebosadero", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Baño"], "elementos": ["Lavamanos LAUFEN Savoy · Sin rebosadero - Blanco 000"], "materiales": ["Laufen - SAVOY - Chrome", "Laufen - SAVOY - 000 White"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Sanitarios y grifería"}, {"id": "18.95-EXT", "codigo": "18.95-EXT", "item": "Bidet", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Baño"], "elementos": ["Bidé (1) · Bidet de pie"], "materiales": [], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Sanitarios y grifería"}, {"id": "20.03", "codigo": "20.03", "item": "Cañería de descarga de polipropileno 63mm", "cantidad": 2.59, "unidad": "ml", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Tipos de tubería · Duratop - XR - MH 3000 mm"], "materiales": [], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Obra gruesa"}, {"id": "21.04", "codigo": "21.04", "item": "Bocas de iluminación", "cantidad": 17.0, "unidad": "u", "medidas": "", "ambientes": ["Sala de Estar"], "elementos": ["Spot Circular Kreon Aplis-In-Line-80 · Spot Circular", "Alcon-12100-10-PR-Revit-Family · 8'"], "materiales": ["Default Light Source", "Kreon Chrome", "Kreon Glass", "Kreon Black Gloss20", "Housing", "Lens"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Iluminación"}, {"id": "21.93-EXT", "codigo": "21.93-EXT", "item": "Iluminacion lineal LED en zocalo", "cantidad": 7.24, "unidad": "ml", "medidas": "", "ambientes": [], "elementos": ["Tira LED Lineal · Tira LED Lineal"], "materiales": [], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Iluminación"}, {"id": "21.94-EXT", "codigo": "21.94-EXT", "item": "Cielorraso con iluminacion LED difusa", "cantidad": 0.31, "unidad": "m²", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Techo compuesto · Led Difusa"], "materiales": ["Origen de luz por defecto"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Iluminación"}, {"id": "MOB.02-EXT", "codigo": "MOB.02-EXT", "item": "Cama matrimonial", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Cama Shaker · Doble"], "materiales": ["Madera - Abedul", "Textil - Blanco"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento"}, {"id": "MOB.06-EXT", "codigo": "MOB.06-EXT", "item": "Mobiliario generico estandar (variante)", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Heladera · Estandar"], "materiales": [], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Electrodomésticos", "muestra": {"img": "muestras/MOB_06-EXT.jpg", "hex": "#B4ACA6", "de": "Render D5 · Cocina · Heladera", "ral": [{"ral": "RAL 9006", "nombre": "White aluminium", "hex": "#A5A8A6", "dE": 5.8}, {"ral": "RAL 7004", "nombre": "Signal grey", "hex": "#9EA0A1", "dE": 6.8}, {"ral": "RAL 7044", "nombre": "Silk grey", "hex": "#BDBDB2", "dE": 6.8}]}}, {"id": "MOB.07-EXT", "codigo": "MOB.07-EXT", "item": "Equipamiento fijo de cocina y asientos", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Sala de Estar"], "elementos": ["Sofa Blade (Tisettanta) · Sofa de dos cuerpos"], "materiales": ["Tessuti - Tisettanta", "Acciaio"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento"}, {"id": "MOB.09-EXT", "codigo": "MOB.09-EXT", "item": "Lavadora de carga frontal", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Lavadora Carga Frontal · Lavadora Carga Frontal"], "materiales": ["Verre", "Peinture - Ivoire"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Electrodomésticos"}, {"id": "MOB.10-EXT", "codigo": "MOB.10-EXT", "item": "Mesada de cocina", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Mesada · Mesada"], "materiales": ["Cerámica blanca", "Marmol Mesada"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_10-EXT.jpg", "hex": "#FDFEFE", "de": "Render D5 · Cocina · Mesada de cocina", "ral": [{"ral": "RAL 9003", "nombre": "Signal white", "hex": "#F4F8F4", "dE": 3.1}, {"ral": "RAL 9016", "nombre": "Traffic white", "hex": "#F7FBF5", "dE": 3.7}, {"ral": "RAL 9010", "nombre": "Pure white", "hex": "#F7F9EF", "dE": 5.1}]}}, {"id": "MOB.11-EXT", "codigo": "MOB.11-EXT", "item": "Mesada de bano", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Baño"], "elementos": ["Mesada Baño · Mesada Baño"], "materiales": ["Mesada Baño"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento"}, {"id": "MOB.12-EXT", "codigo": "MOB.12-EXT", "item": "Mueble bajo mesada", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Bajo Mesada · Bajo Mesada"], "materiales": ["Carpinteria Bajomesada"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_12-EXT.jpg", "hex": "#E0DAD7", "de": "Render D5 · Cocina · Frente de bajo mesada", "ral": [{"ral": "RAL 7047", "nombre": "Telegrey 4", "hex": "#CFD0CF", "dE": 4.3}, {"ral": "RAL 9002", "nombre": "Grey white", "hex": "#DDDED4", "dE": 5.7}, {"ral": "RAL 9018", "nombre": "Papyrus white", "hex": "#CFD3CD", "dE": 6.1}]}}, {"id": "MOB.13-EXT", "codigo": "MOB.13-EXT", "item": "Alacena", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["Alacena · Alacena"], "materiales": ["Carpinteria Madera", "Carpinteria Bajomesada", "Carpinteria Comedor(1)"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_13-EXT.jpg", "hex": "#CBBBAB", "de": "Render D5 · Cocina · Frente de alacena", "ral": [{"ral": "RAL 1015", "nombre": "Light ivory", "hex": "#E6D2B5", "dE": 7.3}, {"ral": "RAL 7044", "nombre": "Silk grey", "hex": "#BDBDB2", "dE": 7.6}, {"ral": "RAL 1013", "nombre": "Oyster white", "hex": "#E3D9C6", "dE": 7.9}]}}, {"id": "MOB.14-EXT", "codigo": "MOB.14-EXT", "item": "Armario / placard", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Armario · Armario"], "materiales": ["Carpinteria Armario"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_14-EXT.jpg", "hex": "#998460", "de": "Render D5 · Dormitorio · TV · Placard", "ral": [{"ral": "RAL 1020", "nombre": "Olive yellow", "hex": "#A08F65", "dE": 4.4}, {"ral": "RAL 1035", "nombre": "Pearl beige", "hex": "#908370", "dE": 5.9}, {"ral": "RAL 1019", "nombre": "Grey beige", "hex": "#A48F7A", "dE": 6.9}]}}, {"id": "MOB.16-EXT", "codigo": "MOB.16-EXT", "item": "Rack de TV", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Rack TV · Rack TV"], "materiales": ["*@001-高光蓝 Highlight blue", "Carpinteria Armario(2)"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_16-EXT.jpg", "hex": "#91603A", "de": "Render D5 · Dormitorio · TV · Rack de TV", "ral": [{"ral": "RAL 8003", "nombre": "Clay brown", "hex": "#80542F", "dE": 5.0}, {"ral": "RAL 8023", "nombre": "Orange brown", "hex": "#A65E2F", "dE": 5.7}, {"ral": "RAL 8001", "nombre": "Ochre brown", "hex": "#9C6B30", "dE": 6.8}]}}, {"id": "MOB.17-EXT", "codigo": "MOB.17-EXT", "item": "Mesa de comedor con sillas", "cantidad": 2.0, "unidad": "u", "medidas": "", "ambientes": ["Comedor"], "elementos": ["Columna Mesa · Columna Mesa", "Estructura Mesa Circular1 · Estructura Mesa Circular"], "materiales": ["*@001-高光蓝 Highlight blue", "Madera - Mesa comedor", "Aluminum"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_17-EXT.jpg", "hex": "#A26D36", "de": "Render D5 · Hall de acceso · Mesa / barra de madera", "ral": [{"ral": "RAL 8001", "nombre": "Ochre brown", "hex": "#9C6B30", "dE": 2.1}, {"ral": "RAL 1011", "nombre": "Brown beige", "hex": "#AF804F", "dE": 6.8}, {"ral": "RAL 8023", "nombre": "Orange brown", "hex": "#A65E2F", "dE": 7.1}]}}, {"id": "MOB.18-EXT", "codigo": "MOB.18-EXT", "item": "Respaldar de cama", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Respaldar Cama · Respaldar Cama"], "materiales": ["Aislamiento térmico", "Respaldar Cama"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_18-EXT.jpg", "hex": "#935122", "de": "Render D5 · Dormitorio · Respaldo revestido en madera", "ral": [{"ral": "RAL 8023", "nombre": "Orange brown", "hex": "#A65E2F", "dE": 5.6}, {"ral": "RAL 8003", "nombre": "Clay brown", "hex": "#80542F", "dE": 5.7}, {"ral": "RAL 8004", "nombre": "Copper brown", "hex": "#8F4E35", "dE": 6.6}]}}, {"id": "MOB.19-EXT", "codigo": "MOB.19-EXT", "item": "Escalera-mueble con cajoneras", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Dormitorio"], "elementos": ["Escalera - Exterior · Escalera - Exterior"], "materiales": ["Madera - Parquet", "Carpinteria Madera"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento", "muestra": {"img": "muestras/MOB_19-EXT.jpg", "hex": "#986A2B", "de": "Render D5 · Dormitorio · Escalera de madera", "ral": [{"ral": "RAL 8001", "nombre": "Ochre brown", "hex": "#9C6B30", "dE": 1.6}, {"ral": "RAL 8000", "nombre": "Green brown", "hex": "#887142", "dE": 7.5}, {"ral": "RAL 1011", "nombre": "Brown beige", "hex": "#AF804F", "dE": 9.2}]}}, {"id": "MOB.20-EXT", "codigo": "MOB.20-EXT", "item": "Campana de cocina", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["HAFELE Kitchen Chimney Hood Plus+ · Campana de extractor 70cm x 50cm"], "materiales": ["-"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Electrodomésticos"}, {"id": "MOB.21-EXT", "codigo": "MOB.21-EXT", "item": "Anafe a gas", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["60cm_gas_on_glass_hob · Default"], "materiales": ["32bea116_7d50_41af_a57c_76851e703032", "f31bdfdc_01d2_46e0_822c_941099069146", "88a7dab3_c516_465e_ae32_d9534398d1b3"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Electrodomésticos"}, {"id": "MOB.22-EXT", "codigo": "MOB.22-EXT", "item": "Horno empotrable", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Cocina/Lavadero"], "elementos": ["495.10.035 - SENSE SERIES - OVEN · 495.10.035"], "materiales": ["Hafele - Display", "Hafele - Stainless Steel - Black Matt", "Hafele - Glass"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Electrodomésticos"}, {"id": "MOB.24-EXT", "codigo": "MOB.24-EXT", "item": "Estante del hall de acceso (apoyado en el placard)", "cantidad": 1.0, "unidad": "u", "medidas": "", "ambientes": ["Hall Acceso"], "elementos": ["Hall Acceso · Hall Acceso"], "materiales": ["Carpinteria Armario(1)"], "fuenteCantidad": "Cómputo R11 · 09/10/2026", "grupo": "Carpintería y equipamiento"}, {"id": "PINTURA", "codigo": "—", "item": "Pintura de muros interiores", "cantidad": 32.78, "unidad": "m²", "medidas": "", "ambientes": ["Sala de Estar", "Hall Acceso", "Cocina/Lavadero", "Dormitorio"], "elementos": ["Material de pintura en Revit: ARCAT · Cast-in-Place Concrete (genérico)"], "fuenteCantidad": "R27_PINTURA · parcial", "alerta": "La pintura no tiene código en el cómputo y el área pintada del modelo (32,78 m²) es menor que el revoque fino (110,35 m²). Revisar en Revit.", "grupo": "Pinturas y revoques"}, {"id": "MURO-GRIS", "codigo": "—", "item": "Revestimiento texturado gris en muros curvos", "cantidad": null, "unidad": "m²", "medidas": "", "ambientes": ["Sala de Estar", "Hall Acceso", "Dormitorio"], "elementos": [], "fuenteCantidad": "", "alerta": "Se ve en los renders pero no existe en el modelo de Revit: no tiene cantidad ni código.", "grupo": "Pinturas y revoques", "muestra": {"img": "muestras/MURO-GRIS.jpg", "hex": "#BAADA4", "de": "Render D5 · Sala y comedor · Muro curvo texturado", "ral": [{"ral": "RAL 7044", "nombre": "Silk grey", "hex": "#BDBDB2", "dE": 8.0}, {"ral": "RAL 9006", "nombre": "White aluminium", "hex": "#A5A8A6", "dE": 8.2}, {"ral": "RAL 7038", "nombre": "Agate grey", "hex": "#B4B8B0", "dE": 8.9}]}}, {"id": "PUERTA-INT", "codigo": "12.02", "item": "Puerta interior placa enchapada 0,70 × 2,10", "cantidad": null, "unidad": "u", "medidas": "0,70 × 2,10 m", "ambientes": ["Baño"], "elementos": ["Puerta de 1 hoja · Puerta Interior 0.70cm x 2.10cm"], "fuenteCantidad": "", "alerta": "Está en el modelo (12.02) pero no en el cómputo R11.", "grupo": "Aberturas", "muestra": {"img": "muestras/PUERTA-INT.jpg", "hex": "#BE7D44", "de": "Render D5 · Pasillo · Hoja de puerta interior", "ral": [{"ral": "RAL 1011", "nombre": "Brown beige", "hex": "#AF804F", "dE": 4.5}, {"ral": "RAL 1024", "nombre": "Ochre yellow", "hex": "#BA8F4C", "dE": 8.6}, {"ral": "RAL 8001", "nombre": "Ochre brown", "hex": "#9C6B30", "dE": 9.4}]}}], "prop": {"14.91-EXT": [{"k": "Tipo", "v": "Porcelanato símil mármol calacatta, superficie pulida", "fuente": "Render D5"}, {"k": "Formato", "v": "60 × 60 cm según la trama del modelo; en el render las piezas se ven más grandes", "fuente": "Modelo Revit + Render D5"}, {"k": "Colocación", "v": "Adhesivo cementicio (ítem del cómputo)", "fuente": "Cómputo R11"}, {"k": "Marca / línea", "v": "", "fuente": ""}, {"k": "Junta / pastina", "v": "", "fuente": ""}], "14.92-EXT": [{"k": "Tipo", "v": "Porcelanato en pared (baño, sin diseño final)", "fuente": "Modelo Revit"}, {"k": "Formato", "v": "", "fuente": ""}, {"k": "Marca / línea", "v": "", "fuente": ""}], "14.05": [{"k": "Tipo", "v": "Revestimiento cerámico de cocina", "fuente": "Modelo Revit"}, {"k": "Formato", "v": "", "fuente": ""}, {"k": "Marca / línea", "v": "", "fuente": ""}], "11.09": [{"k": "Terminación", "v": "Revoque fino al fieltro, listo para pintar", "fuente": "Cómputo R11"}, {"k": "Textura en render", "v": "Superficie con relieve marcado (no es un liso de enduido)", "fuente": "Render D5"}], "PINTURA": [{"k": "Tipo", "v": "Látex interior mate", "fuente": ""}, {"k": "Color", "v": "Blanco cálido · medido en render #E9D1BC → RAL 1015 (ΔE 4,2)", "fuente": "Color medido en el render → RAL más cercano (Wikipedia, List of RAL colours)"}, {"k": "Observación de color", "v": "La luz cálida del render amarillea el muro: el color real probablemente sea más blanco (RAL 9010 o 9001). Confirmar con carta física.", "fuente": "Render D5"}, {"k": "Marca", "v": "", "fuente": ""}, {"k": "Rendimiento", "v": "", "fuente": ""}], "MURO-GRIS": [{"k": "Tipo", "v": "Revestimiento texturado símil piedra / microcemento gris", "fuente": "Render D5"}, {"k": "Color", "v": "Medido #BAADA4 → RAL 7044 (ΔE 8,0, coincidencia baja)", "fuente": "Color medido en el render → RAL más cercano (Wikipedia, List of RAL colours)"}, {"k": "Producto", "v": "", "fuente": ""}], "16.01": [{"k": "Sistema", "v": "Cielorraso suspendido de placa de roca de yeso, estructura 35 mm", "fuente": "Cómputo R11"}, {"k": "Terminación", "v": "Pintura látex cielorraso blanco", "fuente": ""}, {"k": "Detalle", "v": "Buñas con tira LED perimetral (ver Iluminación)", "fuente": "Render D5"}], "12.94-EXT": [{"k": "Tipo", "v": "Puerta corrediza de PVC 1,52 × 2,11 m", "fuente": "Cómputo R11"}, {"k": "Perfilería en familia", "v": "GEALAN Smoovio (familia descargada, verificar equivalente local)", "fuente": "Modelo Revit"}, {"k": "Vidrio", "v": "", "fuente": ""}, {"k": "Color de perfil", "v": "Negro (se ve en render)", "fuente": "Render D5"}], "12.95-EXT": [{"k": "Tipo", "v": "Paño corredizo vidriado 3,10 × 2,00 m hacia el patio", "fuente": "Cómputo R11"}, {"k": "Familia en Revit", "v": "Manusa A30 automática: es una puerta comercial, no corresponde a vivienda", "fuente": "Modelo Revit"}, {"k": "Propuesta", "v": "Reemplazar por corrediza de aluminio con línea para vivienda", "fuente": ""}, {"k": "Vidrio", "v": "", "fuente": ""}], "PUERTA-INT": [{"k": "Tipo", "v": "Puerta placa enchapada en madera, 0,70 × 2,10 m", "fuente": "Modelo Revit + Render D5"}, {"k": "Tono", "v": "Madera media cálida · medido #BE7D44", "fuente": "Render D5"}, {"k": "Herrajes", "v": "Manija de acero (se ve en render)", "fuente": "Render D5"}], "18.01": [{"k": "Tipo", "v": "Inodoro largo con mochila 6 l doble descarga", "fuente": "Cómputo R11"}, {"k": "Familia en Revit", "v": "Línea Marina (verificar marca)", "fuente": "Modelo Revit"}], "18.23": [{"k": "Tipo", "v": "Bacha de acero inoxidable 52 × 32 × 18", "fuente": "Cómputo R11"}, {"k": "Familia en Revit", "v": "Roca PORTO 550 (familia descargada)", "fuente": "Modelo Revit"}, {"k": "Grifería", "v": "Monocomando con ducha extraíble, terminación negra (se ve en render)", "fuente": "Render D5"}], "18.94-EXT": [{"k": "Tipo", "v": "Lavamanos de apoyo sin rebosadero", "fuente": "Cómputo R11"}, {"k": "Familia en Revit", "v": "Laufen Savoy (familia descargada)", "fuente": "Modelo Revit"}], "18.95-EXT": [{"k": "Tipo", "v": "Bidet de pie", "fuente": "Cómputo R11"}], "18.93-EXT": [{"k": "Tipo", "v": "Receptáculo de ducha in situ con desagüe", "fuente": "Cómputo R11"}, {"k": "Familia del desagüe", "v": "AXOR 42525 Brushed Bronze (familia descargada)", "fuente": "Modelo Revit"}], "MOB.06-EXT": [{"k": "Marca", "v": "Electrolux: el logo se ve en el render", "fuente": "Render D5"}, {"k": "Tipo", "v": "Heladera con freezer superior, acero/plata", "fuente": "Render D5"}, {"k": "Lugar disponible", "v": "0,60 × 0,63 × 1,85 m en el modelo", "fuente": "Modelo Revit"}, {"k": "Modelo", "v": "", "fuente": ""}], "MOB.09-EXT": [{"k": "Tipo", "v": "Lavarropas de carga frontal", "fuente": "Cómputo R11"}, {"k": "Lugar disponible", "v": "0,60 × 0,63 × 0,85 m", "fuente": "Modelo Revit"}, {"k": "Marca / modelo", "v": "", "fuente": ""}], "MOB.20-EXT": [{"k": "Familia en Revit", "v": "Häfele Bayu 90 (533.87.363), Häfele Tailandia", "fuente": "Modelo Revit"}, {"k": "Observación", "v": "El nombre dice 90 cm y el ancho modelado es 0,70 m", "fuente": "Revisión del modelo"}, {"k": "Marca / modelo local", "v": "", "fuente": ""}], "MOB.21-EXT": [{"k": "Tipo", "v": "Anafe a gas empotrable", "fuente": "Cómputo R11"}, {"k": "Familia en Revit", "v": "60 cm gas on glass hob (genérica)", "fuente": "Modelo Revit"}, {"k": "Marca / modelo", "v": "", "fuente": ""}], "MOB.22-EXT": [{"k": "Familia en Revit", "v": "Häfele 495.10.035 Sense Series", "fuente": "Modelo Revit"}, {"k": "Tipo", "v": "Horno empotrable, frente negro/acero (render)", "fuente": "Render D5"}, {"k": "Marca / modelo local", "v": "", "fuente": ""}], "MOB.10-EXT": [{"k": "Material en modelo", "v": "Cerámica blanca · Mármol mesada", "fuente": "Modelo Revit"}, {"k": "Aspecto en render", "v": "Blanco liso mate, canto recto", "fuente": "Render D5"}, {"k": "Material real", "v": "", "fuente": ""}, {"k": "Espesor", "v": "0,12 m en el modelo (verificar: suele ser 2 cm + frente)", "fuente": "Modelo Revit"}], "MOB.12-EXT": [{"k": "Frentes", "v": "Laqueado / melamina gris claro mate · medido #E0DAD7 → RAL 7047", "fuente": "Color medido en el render → RAL más cercano (Wikipedia, List of RAL colours)"}, {"k": "Herrajes", "v": "", "fuente": ""}], "MOB.13-EXT": [{"k": "Frentes", "v": "Gris claro mate igual a bajo mesada · medido #CBBBAB", "fuente": "Render D5"}, {"k": "Interior", "v": "Nicho abierto con estante de madera (render)", "fuente": "Render D5"}], "MOB.14-EXT": [{"k": "Frentes", "v": "Gris claro mate con estantes abiertos", "fuente": "Render D5"}, {"k": "Observación", "v": "Revisión del modelo: placard computado como 2 unidades", "fuente": "Revisión del modelo"}], "MOB.16-EXT": [{"k": "Material", "v": "Madera media cálida + frente gris", "fuente": "Render D5"}, {"k": "Medidas", "v": "0,47 × 3,14 × 2,50 m", "fuente": "Modelo Revit"}], "MOB.17-EXT": [{"k": "Material", "v": "Tablero de madera maciza tono miel · medido #A26D36", "fuente": "Render D5"}, {"k": "Observación", "v": "Revisión del modelo: mesa computada como 2 unidades", "fuente": "Revisión del modelo"}], "MOB.18-EXT": [{"k": "Material", "v": "Revestimiento de madera horizontal con LED superior", "fuente": "Render D5"}, {"k": "Medidas", "v": "2,99 × 1,00 m", "fuente": "Modelo Revit"}], "MOB.19-EXT": [{"k": "Material", "v": "Madera tono miel con cajoneras", "fuente": "Render D5 + Modelo Revit"}, {"k": "Medidas", "v": "1,00 × 0,81 × 0,60 m", "fuente": "Modelo Revit"}], "MOB.24-EXT": [{"k": "Material", "v": "Madera, estante flotante del hall", "fuente": "Render D5"}, {"k": "Medidas", "v": "0,60 × 0,30 × 0,18 m", "fuente": "Modelo Revit"}], "MOB.02-EXT": [{"k": "Familia en Revit", "v": "Cama Shaker doble (equipamiento, no se entrega en la venta)", "fuente": "Modelo Revit"}], "MOB.07-EXT": [{"k": "Familia en Revit", "v": "Sofá Blade, Tisettanta (equipamiento, no se entrega en la venta)", "fuente": "Modelo Revit"}], "21.04": [{"k": "Tipo", "v": "Spot embutido circular", "fuente": "Modelo Revit"}, {"k": "Familia en Revit", "v": "Kreon Aplis In-Line 80 (familia descargada)", "fuente": "Modelo Revit"}, {"k": "Temperatura de color", "v": "Cálida, 3000 K aprox. (render)", "fuente": "Render D5"}, {"k": "Marca / modelo local", "v": "", "fuente": ""}], "21.93-EXT": [{"k": "Tipo", "v": "Tira LED lineal en zócalo y buñas", "fuente": "Modelo Revit"}, {"k": "Temperatura de color", "v": "Cálida, 2700–3000 K aprox. (render)", "fuente": "Render D5"}, {"k": "Potencia / perfil", "v": "", "fuente": ""}], "21.94-EXT": [{"k": "Tipo", "v": "Paño de cielorraso con LED difusa", "fuente": "Modelo Revit"}, {"k": "Temperatura de color", "v": "", "fuente": ""}], "05.90-EXT": [{"k": "Tipo", "v": "Superficie con césped en patio", "fuente": "Cómputo R11"}, {"k": "Observación", "v": "El patio todavía no está diseñado", "fuente": "Gabriel"}], "06.91-EXT": [{"k": "Tipo", "v": "Vigas / tirantes de madera 12 × 20 cm", "fuente": "Revisión del modelo"}, {"k": "Especie / tratamiento", "v": "", "fuente": ""}]}, "alertas": [["Nombre de tipo “Pido Porcelanato”", "Corregir a “Piso Porcelanato” en Revit para que el cómputo y las fichas lo muestren bien."], ["Ambiente “Sal de Estar”", "Corregir el nombre de la habitación a “Sala de Estar”."], ["Familias descargadas con fabricantes del exterior", "Häfele (Tailandia), Laufen, Roca, Gealan, Manusa, AXOR, Kreon y Alcon vienen de familias genéricas: no son lo que se va a comprar. Reemplazar por el producto elegido."], ["Puerta corrediza del dormitorio", "La familia es una puerta automática comercial (Manusa A30). Para vivienda corresponde una corrediza de aluminio."], ["Campana de cocina", "El nombre dice 90 cm y el ancho modelado es 0,70 m."], ["Placard y mesa de comedor", "Cada uno se computa como 2 unidades."], ["Mesada de cocina", "Espesor modelado 0,12 m: confirmar espesor real de la placa."]], "verif": {}, "recorrido": "../360/"}</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById('cat-data').textContent);
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const nf = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 });
+const GC = { 'Pisos y revestimientos': 'var(--orange)', 'Pinturas y revoques': 'var(--purple)', 'Cielorrasos': 'var(--blue)', 'Aberturas': 'var(--green)',
+  'Sanitarios y grifería': 'var(--blue)', 'Electrodomésticos': 'var(--amber)', 'Iluminación': 'var(--amber)', 'Carpintería y equipamiento': 'var(--orange)',
+  'Maderas y estructura vista': 'var(--orange)', 'Exterior y patio': 'var(--green)', 'Obra gruesa': 'var(--dim)' };
+const ORDER = Object.keys(GC);
+const AMB = ['Cocina/Lavadero', 'Sala de Estar', 'Hall Acceso', 'Dormitorio', 'Baño', 'Patio Interno'];
+const items = D.items.map((i) => ({ ...i, full: i.item, item: i.item.split(' (')[0] }));
+let verif = JSON.parse(JSON.stringify(D.verif || {}));      // id -> { campos: {k: {s, v, nota}}, buscar, compra: {proveedor, precio, fecha} }
+let db = null, canEdit = false;
+let tab = 'mood', amb = 'Todos', q = '', showGruesa = false;
+
+/* ondas decorativas */
+(() => { let s = ''; for (let i = 0; i < 26; i++) { const o = i * 9; s += `<path d="M-20 ${420 + o} C 260 ${180 + o * 1.6}, 520 ${620 - o}, 820 ${330 + o * .7} S 1150 ${120 + o}, 1240 ${260 + o * .8}"/>`; } $('#wv').innerHTML = s; })();
+
+$('#obra').textContent = D.obra;
+if (D.recorrido && !window.claude) $('#toTour').hidden = false;
+$('#sub').textContent = `Moodboard y especificaciones · cantidades del cómputo del modelo Revit (${D.fecha}) · muestras recortadas de los renders`;
+
+const fieldsOf = (it) => (D.prop[it.id] || []);
+function stateOf(it) {
+  const f = fieldsOf(it), v = verif[it.id]?.campos || {};
+  const tot = f.length, ok = f.filter((x) => v[x.k]?.s === 'ok' || v[x.k]?.s === 'fix').length;
+  if (it.alerta && !ok) return ['alert', 'Revisar'];
+  if (!tot) return ['todo', 'Sin propuesta'];
+  if (ok === tot) return ['ok', 'Verificado'];
+  return ok ? ['prop', `${ok} de ${tot}`] : ['prop', 'Propuesta'];
+}
+const visible = () => items.filter((it) => (showGruesa || it.grupo !== 'Obra gruesa')
+  && (amb === 'Todos' || it.ambientes.includes(amb))
+  && (!q || (it.item + ' ' + it.codigo + ' ' + (fieldsOf(it).map((f) => f.v).join(' '))).toLowerCase().includes(q)));
+const groups = (list, img) => ORDER.map((g) => [g, list.filter((i) => i.grupo === g).sort((a, b) => img ? (!!b.muestra - !!a.muestra) : 0)]).filter(([, l]) => l.length);
+const qty = (it) => it.cantidad == null ? '<span class="qty none">sin cantidad</span>' : `<span class="qty">${nf.format(it.cantidad)} ${esc(it.unidad)}</span>`;
+const colorDe = (it) => it.colorModelo?.[0]?.hex || it.muestra?.hex;
+const swatch = (it) => colorDe(it) ? `<span class="sw" style="background:${colorDe(it)}" title="${it.colorModelo ? 'Color del modelo' : 'Color medido en el render'}"></span>` : '';
+
+function stats() {
+  const real = items.filter((i) => i.grupo !== 'Obra gruesa');
+  $('#s-items').innerHTML = `${real.length} <small>+ ${items.length - real.length} de obra gruesa</small>`;
+  $('#s-qty').innerHTML = `${items.filter((i) => i.cantidad != null).length} <small>de ${items.length}</small>`;
+  let tot = 0, ok = 0;
+  for (const it of items) { const f = fieldsOf(it); tot += f.length; const v = verif[it.id]?.campos || {}; ok += f.filter((x) => ['ok', 'fix'].includes(v[x.k]?.s)).length; }
+  $('#s-ver').innerHTML = `${ok} <small>de ${tot}</small>`; $('#s-prog').style.width = tot ? (ok / tot * 100) + '%' : 0;
+  $('#s-ask').innerHTML = `${Object.values(verif).filter((v) => v.buscar).length} <small>ítems para investigar</small>`;
+  $('#b-spec').textContent = real.length; $('#b-alert').textContent = items.filter((i) => i.alerta).length + D.alertas.length;
+}
+
+function filters() {
+  $('#filters').innerHTML = ['Todos', ...AMB].map((a) => `<button class="chip" data-amb="${esc(a)}" aria-pressed="${a === amb}">${esc(a.replace('/', ' / '))}</button>`).join('')
+    + `<button class="chip" id="gruesa" aria-pressed="${showGruesa}">Obra gruesa</button><input class="search" id="q" type="search" placeholder="Buscar material, código o marca" value="${esc(q)}" aria-label="Buscar">`;
+}
+$('#filters').addEventListener('click', (e) => {
+  const c = e.target.closest('[data-amb]'); if (c) { amb = c.dataset.amb; render(); }
+  if (e.target.id === 'gruesa') { showGruesa = !showGruesa; render(); }
+});
+$('#filters').addEventListener('input', (e) => { if (e.target.id === 'q') { q = e.target.value.trim().toLowerCase(); renderView(); } });
+
+function renderView() {
+  const list = visible();
+  let h = '';
+  if (tab === 'mood') {
+    for (const [g, l] of groups(list, true)) {
+      h += `<h2 class="sec" style="--c:${GC[g]}">${esc(g)} <span class="n">${l.length}</span></h2><div class="grid">`;
+      for (const it of l) {
+        const prop = fieldsOf(it).find((f) => f.v && /Tipo|Material|Frentes|Terminación|Marca/.test(f.k));
+        h += `<button class="tile" data-id="${esc(it.id)}" style="--c:${GC[g]}"><div class="ph">${it.muestra ? `<img src="${it.muestra.img}" alt="" loading="lazy">` : `<span class="noimg"><b>${esc(it.codigo)}</b><small>Sin muestra en el render</small></span>`}</div>
+          <div class="bd"><span class="nm">${esc(it.item)}</span><span class="meta">${swatch(it)}${colorDe(it) ? esc(colorDe(it)) : ''}<span class="code">${esc(it.codigo)}</span>${qty(it)}</span>
+          ${prop ? `<span class="meta">${esc(prop.v)}</span>` : ''}</div></button>`;
+      }
+      h += '</div>';
+    }
+  } else if (tab === 'spec') {
+    h += `<div class="legend"><span><span class="st ok">Verificado</span> todos los campos confirmados</span><span><span class="st prop">Propuesta</span> datos de Claude por revisar</span><span><span class="st alert">Revisar</span> el modelo tiene un problema</span><span><span class="st todo">Sin propuesta</span> falta investigar</span></div>`;
+    for (const [g, l] of groups(list)) {
+      h += `<h2 class="sec" style="--c:${GC[g]}">${esc(g)} <span class="n">${l.length}</span></h2><div class="list">`;
+      for (const it of l) {
+        const [c, t] = stateOf(it);
+        h += `<button class="row" data-id="${esc(it.id)}"><span class="t">${it.muestra ? `<img src="${it.muestra.img}" alt="">` : '<span class="sq"></span>'}<span><b>${esc(it.item)}</b><span class="code">${esc(it.codigo)}</span></span></span>
+          ${qty(it)}<span class="amb">${esc(it.ambientes.join(' · ') || '—')}</span><span class="st ${c}">${esc(t)}</span><span class="chev">›</span></button>`;
+      }
+      h += '</div>';
+    }
+  } else {
+    h += `<h2 class="sec" style="--c:var(--amber)">Para corregir en el modelo <span class="n">${D.alertas.length + items.filter((i) => i.alerta).length}</span></h2><div class="alerts">`;
+    for (const it of items.filter((i) => i.alerta)) h += `<button class="al" data-id="${esc(it.id)}"><b>${esc(it.item)} · ${esc(it.codigo)}</b><span>${esc(it.alerta)}</span></button>`;
+    for (const a of D.alertas) h += `<div class="al"><b>${esc(a[0])}</b><span>${esc(a[1])}</span></div>`;
+    h += '</div>';
+  }
+  if (!list.length && tab !== 'alert') h = '<p class="sub" style="margin:24px 0">No hay ítems con ese filtro.</p>';
+  $('#view').innerHTML = h;
+}
+$('#view').addEventListener('click', (e) => { const t = e.target.closest('[data-id]'); if (t) openItem(t.dataset.id); });
+
+function render() { filters(); renderView(); stats();
+  for (const [id, t] of [['t-mood', 'mood'], ['t-spec', 'spec'], ['t-alert', 'alert']]) $('#' + id).setAttribute('aria-selected', String(tab === t)); }
+for (const [id, t] of [['t-mood', 'mood'], ['t-spec', 'spec'], ['t-alert', 'alert']]) $('#' + id).addEventListener('click', () => { tab = t; render(); });
+
+/* ---------- panel de ítem con verificación por campo ---------- */
+let open = null;
+function openItem(id) {
+  const it = items.find((i) => i.id === id); if (!it) return;
+  open = id;
+  const v = verif[id] || { campos: {}, compra: {} };
+  const m = it.muestra;
+  const comp = v.compra || {};
+  $('#pBody').innerHTML = `
+    <p class="eyebrow" style="--c:${GC[it.grupo]}">${esc(it.grupo)} · <span class="code">${esc(it.codigo)}</span></p>
+    <h2 id="pTitle">${esc(it.item)}</h2>
+    <div class="hero ${m ? '' : 'solo'}">${m ? `<img src="${m.img}" alt="Muestra del render">` : ''}
+      <div class="facts">
+        <div><span>Cantidad</span><span>${it.cantidad == null ? 'sin cantidad en el modelo' : nf.format(it.cantidad) + ' ' + esc(it.unidad)}</span></div>
+        ${it.medidas ? `<div><span>Medidas</span><span>${esc(it.medidas)}</span></div>` : ''}
+        <div><span>Ambientes</span><span>${esc(it.ambientes.join(', ') || '—')}</span></div>
+        ${it.elementos.length ? `<div><span>En Revit</span><span>${esc(it.elementos.join(' · '))}</span></div>` : ''}
+        ${it.full !== it.item ? `<div><span>Ítem del cómputo</span><span>${esc(it.full)}</span></div>` : ''}
+        ${it.fuenteCantidad ? `<div><span>Fuente</span><span>${esc(it.fuenteCantidad)}</span></div>` : ''}
+        ${m ? `<div><span>Color medido</span><span><span class="sw" style="background:${m.hex}"></span> ${m.hex}</span></div>` : ''}
+      </div></div>
+    ${it.colorModelo ? `<h2 class="sec" style="--c:var(--green)">Color real del material (Revit, sin luz)</h2>${it.colorModelo.map((c) => `<div class="fsrc" style="font-size:12px;color:var(--text)"><span class="sw" style="background:${c.hex}"></span> ${esc(c.material)} · ${c.hex} · color de ${esc(c.fuente.toLowerCase())}${c.textura ? ' · textura ' + esc(c.textura) : ''}</div><div class="ralrow">${c.ral.map((r) => `<span class="ral"><span class="sw" style="background:${r.hex}"></span>${esc(r.ral)} · ${esc(r.nombre)} · ΔE ${String(r.dE).replace('.', ',')}</span>`).join('')}</div>`).join('')}` : (it.materiales?.length ? `<div class="fsrc">Materiales en Revit: ${esc(it.materiales.join(' · '))}. Falta exportar su color (R29).</div>` : '')}
+    ${m ? `<div class="fsrc">Muestra: ${esc(m.de)}. Color afectado por la luz del render.</div><div class="ralrow">${m.ral.map((r) => `<span class="ral"><span class="sw" style="background:${r.hex}"></span>${esc(r.ral)} · ${esc(r.nombre)} · ΔE ${String(r.dE).replace('.', ',')}</span>`).join('')}</div>` : ''}
+    ${it.alerta ? `<div class="alertbox">${esc(it.alerta)}</div>` : ''}
+    <h2 class="sec" style="--c:var(--purple)">Especificación propuesta</h2>
+    <div id="fields">${fieldsOf(it).map((f) => fieldHtml(f, v.campos[f.k])).join('') || '<p class="sub" style="margin:0">Todavía no hay propuesta para este ítem.</p>'}</div>
+    <h2 class="sec" style="--c:var(--green)">Compra</h2>
+    <div class="edit">
+      <input id="cProv" placeholder="Proveedor" value="${esc(comp.proveedor || '')}" ${canEdit ? '' : 'disabled'}>
+      <input id="cPrecio" placeholder="Precio de referencia (con unidad y moneda)" value="${esc(comp.precio || '')}" ${canEdit ? '' : 'disabled'}>
+      <input id="cFecha" placeholder="Fecha del precio" value="${esc(comp.fecha || '')}" ${canEdit ? '' : 'disabled'}>
+    </div>
+    <label class="ask"><input type="checkbox" id="askC" ${v.buscar ? 'checked' : ''}> Pedirle a Claude que busque productos reales con ficha técnica y precio para este ítem</label>
+    <div class="facts-acts"><button class="b main" id="saveIt" type="button">Guardar</button></div>
+    <p class="saveline" id="saveline">${canEdit ? (db ? '' : 'Guardado no disponible en esta vista.') : 'Vista de solo lectura.'}</p>`;
+  $('#panel').classList.toggle('ro', !canEdit);
+  $('#panel').hidden = false; $('#scrim').hidden = false; $('#pClose').focus();
+}
+function fieldHtml(f, st = {}) {
+  const val = st.s === 'fix' ? st.v : f.v;
+  return `<div class="field" data-k="${esc(f.k)}" data-s="${st.s || ''}">
+    <div class="fk"><span>${esc(f.k)}</span>${st.s === 'ok' ? '<span class="st ok">Correcto</span>' : st.s === 'fix' ? '<span class="st prop">Corregido</span>' : st.s === 'no' ? '<span class="st alert">No viable</span>' : f.v ? '<span class="st prop">Propuesta</span>' : '<span class="st todo">A completar</span>'}</div>
+    <div class="fv ${val ? '' : 'empty'}">${esc(val || 'a completar')}</div>
+    ${f.fuente ? `<div class="fsrc">Fuente: ${esc(f.fuente)}</div>` : ''}
+    ${st.nota ? `<div class="fsrc">Nota: ${esc(st.nota)}</div>` : ''}
+    <div class="facts-acts">
+      ${f.v ? `<button type="button" class="b ok" data-a="ok" aria-pressed="${st.s === 'ok'}">✓ Correcto</button>` : ''}
+      <button type="button" class="b fix" data-a="fix" aria-pressed="${st.s === 'fix'}">✎ ${f.v ? 'Corregir' : 'Cargar'}</button>
+      ${f.v ? `<button type="button" class="b no" data-a="no" aria-pressed="${st.s === 'no'}">✗ No viable</button>` : ''}
+    </div>
+    <div class="edit" hidden><input placeholder="${f.v ? 'Valor correcto' : 'Valor'}" value="${esc(st.s === 'fix' ? st.v : '')}"><textarea rows="2" placeholder="Nota (opcional): por qué no sirve, qué buscar">${esc(st.nota || '')}</textarea></div>
+  </div>`;
+}
+$('#pBody').addEventListener('click', (e) => {
+  const b = e.target.closest('.b[data-a]'); if (!b || !canEdit) return;
+  const fd = b.closest('.field'), a = b.dataset.a, cur = fd.dataset.s;
+  const next = cur === a ? '' : a;
+  fd.dataset.s = next;
+  fd.querySelectorAll('.b[data-a]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.a === next)));
+  fd.querySelector('.edit').hidden = !(next === 'fix' || next === 'no');
+  if (next === 'fix' || next === 'no') fd.querySelector('.edit input, .edit textarea').focus();
+  $('#saveline').textContent = 'Hay cambios sin guardar.';
+});
+$('#pBody').addEventListener('input', () => { $('#saveline').textContent = 'Hay cambios sin guardar.'; });
+$('#pBody').addEventListener('click', async (e) => {
+  if (e.target.id !== 'saveIt' || !open) return;
+  const it = items.find((i) => i.id === open);
+  const campos = {};
+  document.querySelectorAll('#fields .field').forEach((fd) => {
+    const s = fd.dataset.s; if (!s) return;
+    const [inp, ta] = fd.querySelectorAll('.edit input, .edit textarea');
+    campos[fd.dataset.k] = { s, v: s === 'fix' ? inp.value.trim() : '', nota: ta.value.trim() };
+  });
+  const rec = { campos, buscar: $('#askC').checked, compra: { proveedor: $('#cProv').value.trim(), precio: $('#cPrecio').value.trim(), fecha: $('#cFecha').value.trim() } };
+  verif[open] = rec; stats(); renderView();
+  if (!db) { $('#saveline').textContent = 'Cambios aplicados solo en esta vista (guardado no disponible).'; return; }
+  $('#saveline').textContent = 'Guardando…';
+  try {
+    await db.doc('verificacion/' + open).set({ item: it.item, codigo: it.codigo, campos: JSON.stringify(campos), buscar: rec.buscar, compra: JSON.stringify(rec.compra), actualizado: new Date().toISOString() });
+    $('#saveline').textContent = 'Guardado. Claude lo lee en la próxima sesión.';
+  } catch (err) { $('#saveline').textContent = `No se pudo guardar (${err?.code || 'error'}). Probá de nuevo.`; }
+});
+function closePanel() { $('#panel').hidden = true; $('#scrim').hidden = true; open = null; }
+$('#pClose').addEventListener('click', closePanel); $('#scrim').addEventListener('click', closePanel);
+addEventListener('keydown', (e) => { if (e.key === 'Escape') closePanel(); });
+
+window.ritualMood = { edit: (v) => { canEdit = v; } };
+render();
+(async () => {
+  const c = window.claude; if (!c?.use) return;
+  const [dbNs, user] = await Promise.all([c.use('db').catch(() => null), c.use('user').catch(() => null)]);
+  canEdit = user ? await user.canEdit().catch(() => false) : false;
+  db = canEdit ? dbNs : dbNs;
+  if (!dbNs) return;
+  try {
+    const snap = await dbNs.collection('verificacion').get();
+    for (const d of snap.docs) { const x = d.data(); verif[d.id] = { campos: JSON.parse(x.campos || '{}'), buscar: !!x.buscar, compra: JSON.parse(x.compra || '{}') }; }
+    render();
+  } catch { /* sin verificaciones guardadas */ }
+})();
+})();
+</script>
+
+</body></html>
