@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ritual Control</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#22211E">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Ritual Control">
+<meta name="application-name" content="Ritual Control">
+<!-- Página puente: el acceso directo del celular apunta ACÁ (una dirección que no cambia) y desde acá se abre la app.
+     Así el acceso directo no guarda el "/u/N/" de la cuenta de Google que Safari tenga abierta en ese momento. -->
+<style>
+  html,body{margin:0;height:100%;background:#22211E;color:#F3F3F4;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+  main{min-height:100%;display:grid;place-content:center;gap:16px;padding:24px;text-align:center}
+  b{letter-spacing:.12em;font-weight:600} p{margin:0;color:#A9A8A4;font-size:14px;max-width:34ch}
+  a.btn{display:inline-block;margin-top:6px;padding:13px 22px;border-radius:4px;background:#F07A3A;color:#191816;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+  <b>RITUAL ESTUDIO</b>
+  <p>Abriendo Ritual Control…</p>
+  <a class="btn" id="abrir" target="_top" href="https://script.google.com/macros/s/AKfycbywme9nyVG_HYU4E6AWPHdiSaQyZTT2qi-PVhM-o7S13CcBw2EsXrjhYJTyzqIPUdJw/exec">Abrir la app</a>
+  <p style="font-size:12px">Entrá con la cuenta de Google que el estudio autorizó. Si ves un error de Google, tocá "Abrir la app" de nuevo.</p>
+</main>
+<script>
+  // salta a la app solo, pero SOLO si esta página es la ventana principal.
+  // Si se la mira dentro de una vista previa (un marco), Google no deja abrir la app ahí y quedaría en blanco: queda el botón.
+  var enMarco = false;
+  try { enMarco = window.top !== window.self; } catch (e) { enMarco = true; }
+  if (!enMarco) setTimeout(function () { location.replace(document.getElementById('abrir').href); }, 700);
+</script>
+</body>
+</html>
